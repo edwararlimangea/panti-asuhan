@@ -614,6 +614,33 @@ footer .follow p {
 
 /* Media Queries */
 @media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+  #hamburger-menu {
+    display: inline-block;
+  }
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #f1f7ff;
+    width: 35rem;
+    height: 100vh;
+  }
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+  .navbar .navbar-nav ul li a {
+    color: #575265;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+  .navbar-nav ul {
+    display: block;
+  }
   .hero-container {
     flex-direction: column;
     align-items: center;
@@ -691,37 +718,6 @@ footer .follow p {
 @media (max-width: 1366px) {
   html {
     font-size: 75%;
-  }
-}
-
-/* Tablet */
-@media (max-width: 768px) {
-  html {
-    font-size: 62.5%;
-  }
-  #hamburger-menu {
-    display: inline-block;
-  }
-  .navbar .navbar-nav {
-    position: absolute;
-    top: 100%;
-    right: -100%;
-    background-color: #f1f7ff;
-    width: 35rem;
-    height: 100vh;
-  }
-  .navbar .navbar-nav.active {
-    right: 0;
-  }
-  .navbar .navbar-nav ul li a {
-    color: #575265;
-    display: block;
-    margin: 1.5rem;
-    padding: 0.5rem;
-    font-size: 1.5rem;
-  }
-  .navbar-nav ul {
-    display: block;
   }
 }
 
@@ -969,5 +965,32 @@ footer .follow p {
     width: 150px;
     height: 200px;
     margin: 0 auto;
+  }
+  .container-maps {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 1rem; /* Sesuaikan padding agar lebih pas di layar kecil */
+  }
+
+  .content-maps h1 {
+    font-size: 24px; /* Sesuaikan ukuran teks */
+    text-align: center;
+  }
+
+  .content-maps p {
+    font-size: 14px;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .map {
+    width: 100%;
+    margin-top: 20px; /* Memberi jarak antara teks dan peta */
+  }
+
+  .map iframe {
+    margin-left: 0;
+    border-radius: 10px; /* Kurangi border-radius agar lebih cocok di layar kecil */
   }
 }
