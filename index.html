@@ -7,7 +7,10 @@
 
     <!-- Feather icon -->
     <script src="https://unpkg.com/feather-icons"></script>
-
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- Link CSS -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -25,10 +29,11 @@
       </a>
       <div class="navbar-nav">
         <ul>
-          <li><a href="#home">Home</a></li>
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="/donasi.html">Donasi</a></li>
           <li><a href="#anak">Anak-anak panti</a></li>
           <li>
-            <a class="about">Tentang Kami</a>
+            <a class="about">Tentang Kami <i class="bx bx-chevron-down"></i></a>
             <ul class="dropdown">
               <li><a href="profil.html">Profil Lembaga</a></li>
               <li><a href="visi-misi.html">Visi dan Misi</a></li>
@@ -69,6 +74,7 @@
     </section>
     <!-- Section End -->
 
+    <!-- Container Start -->
     <div class="container" id="anak">
       <h1 class="heading">DAFTAR ANAK PANTI</h1>
       <div class="box-container">
@@ -248,7 +254,9 @@
         </div>
       </div>
     </div>
+    <!-- Container Start -->
 
+    <!-- Section Fasilitas Start -->
     <section class="fasilitas" id="fasilitas">
       <h2 class="section-title">Fasilitas kami</h2>
       <div class="fasilitas-container">
@@ -261,9 +269,9 @@
           <p class="fasilitas-description">
             <strong class="fasilitas-title">Tempat Nonton Bersama</strong>
             <br />
-            Fasilitas ruangan panti asuhan biasanya meliputi kamar tidur
-            bersama, ruang makan, ruang belajar, ruang bermain, dan area ibadah
-            untuk memenuhi kebutuhan harian anak-anak.
+            Fasilitas ruangan panti asuhan meliputi kamar tidur bersama, ruang
+            makan, ruang belajar, ruang bermain, dan area ibadah untuk memenuhi
+            kebutuhan harian anak-anak.
           </p>
         </div>
         <div class="fasilitas-item">
@@ -307,8 +315,9 @@
         </div>
       </div>
     </section>
+    <!-- Section Fasilitas End -->
 
-    <!-- Footer -->
+    <!-- Footer Start-->
     <footer class="footer" id="footer">
       <div class="follow">
         <p>Ikuti Kami</p>
@@ -326,11 +335,14 @@
         <p>Creared by <a href="">Bait Nauli Buala Zoaya</a>. | &copy; 2024</p>
       </div>
     </footer>
+    <!-- Footer End -->
 
+    <!-- Script Untuk Icon -->
     <script>
       feather.replace();
     </script>
 
+    <!-- My Script -->
     <script src="js/main.js"></script>
   </body>
 </html>

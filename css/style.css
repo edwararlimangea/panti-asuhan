@@ -12,9 +12,9 @@ body {
   background-color: white;
 }
 
-/* Navbar */
-
-/* Logo */
+/*--------------------------------------------------
+[1. Start Navbar]
+--------------------------------------------------*/
 .navbar-logo img {
   width: 60px;
   height: 55px;
@@ -24,7 +24,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.4rem 7%;
+  padding: 1.4rem 4%;
   background: #f1f7ff !important;
   position: fixed;
   top: 0;
@@ -81,7 +81,6 @@ ul {
   color: #507bf5;
 }
 
-/* Login Button */
 .navbar .btn {
   background: linear-gradient(to right, #507bf5 0%, #04c3e1 100%);
   box-shadow: 1px 1px 30px 0 rgba(0, 0, 0, 0.2);
@@ -110,7 +109,9 @@ ul {
   display: none;
 }
 
-/* Section */
+/*--------------------------------------------------
+[2. Start Class Hero]
+--------------------------------------------------*/
 .hero {
   position: relative;
   bottom: 0;
@@ -192,7 +193,9 @@ ul {
   margin-right: 40px;
 }
 
-/* Container */
+/*--------------------------------------------------
+[3. Start Class Container]
+--------------------------------------------------*/
 .container {
   padding: 7rem 6% 1.3rem;
 }
@@ -238,7 +241,9 @@ ul {
   transform: scale(1.03);
 }
 
-/* Section Fasilitas */
+/*--------------------------------------------------
+[4. Start Class Fasilitas]
+--------------------------------------------------*/
 .fasilitas {
   padding: 50px;
   background-color: #f1f7ff;
@@ -292,7 +297,9 @@ ul {
   line-height: 1.5;
 }
 
-/* Profil Lembaga */
+/*--------------------------------------------------
+[5. Start Class Profil-Contect]
+--------------------------------------------------*/
 .profil-content {
   padding: 100px;
   margin: 0 auto;
@@ -330,7 +337,9 @@ ul {
   line-height: 2.8rem;
 }
 
-/* Visi Misi */
+/*--------------------------------------------------
+[6. Start Class visi-content]
+--------------------------------------------------*/
 .visi-content {
   padding: 100px 20px;
   max-width: 1200px;
@@ -376,7 +385,9 @@ ul {
   line-height: 1.6;
 }
 
-/* Pengelolah */
+/*--------------------------------------------------
+[7. Start Class pengelola]
+--------------------------------------------------*/
 .pengelola {
   padding: 100px;
   margin: 0 auto;
@@ -425,7 +436,9 @@ ul {
   color: #000000;
 }
 
-/* Galeri */
+/*--------------------------------------------------
+[8. Start Class Gallery]
+--------------------------------------------------*/
 .galeri {
   padding: 100px;
   margin: 0 0;
@@ -456,7 +469,9 @@ ul {
   transform: scale(1.05);
 }
 
-/* Donasi */
+/*--------------------------------------------------
+[9. Start Class donasi]
+--------------------------------------------------*/
 .donasi {
   width: 85%;
   margin: 0 auto;
@@ -531,8 +546,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 5px;
-  margin-top: 5px;
+  margin-bottom: 1px;
 }
 
 .bank-logo img {
@@ -554,7 +568,7 @@ ul {
 }
 
 .qris-container {
-  margin-top: 5px;
+  margin-top: auto;
   text-align: center;
 }
 
@@ -563,6 +577,27 @@ ul {
   height: 350px;
   object-fit: contain;
 }
+.donation-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.donation-table th,
+.donation-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.donation-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+/*--------------------------------------------------
+[10. Start Class container-maps]
+--------------------------------------------------*/
 .container-maps {
   margin-top: 80px;
   display: flex;
@@ -590,7 +625,10 @@ ul {
   height: 300px;
   border: 0;
 }
-/* Footer */
+
+/*--------------------------------------------------
+[11. Start Footer]
+--------------------------------------------------*/
 .footer {
   text-align: center;
   padding: 1rem 0;
@@ -610,7 +648,9 @@ ul {
   font-size: 14px;
 }
 
-/* Media Queries */
+/*--------------------------------------------------
+[Start Media Queries 768px]
+--------------------------------------------------*/
 @media (max-width: 768px) {
   html {
     font-size: 62.5%;
@@ -708,8 +748,6 @@ ul {
   .profil-column p {
     font-size: 12px;
   }
-
-  /* Visi Misi */
 }
 
 /* Laptop */
@@ -952,7 +990,7 @@ ul {
   }
 
   .rekening-info p {
-    font-size: 12px;
+    font-size: 17px;
   }
 
   .qris-container {
@@ -964,11 +1002,13 @@ ul {
     height: 200px;
     margin: 0 auto;
   }
+
+  /* Maps */
   .container-maps {
     flex-direction: column;
     align-items: center;
     height: auto;
-    padding: 10px; 
+    padding: 10px;
   }
   .content-maps {
     margin-left: 0;
@@ -977,7 +1017,7 @@ ul {
   }
   .map iframe {
     width: 100%;
-    height: 250px; 
+    height: 250px;
     margin: 20px 0 0 0;
   }
 }
